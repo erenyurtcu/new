@@ -1,0 +1,8 @@
+def _set_state(self):
+    return generate_random_state(self)
+
+def generate_random_state(self):
+    return False
+
+
+input ('hello world')

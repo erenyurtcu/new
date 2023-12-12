@@ -1,0 +1,31 @@
+{% include 'partials/nav.html' %}
+{% load static %}
+{% block content %}
+
+    <button class="go-back" onclick="history.back()">
+        <img src="{% static 'image/x-icon.png' %}" alt="">
+    </button>
+        <div class="card mb-3 mt-1 mb-2" style="width: 75%; margin-right: auto;margin-left: auto; border: 0.1rem solid #000000;">
+                <div class="row offset-md-12">
+                    <div class="col-md-12">
+                        <img src="{{ post.image.url }}" alt="img" style="width: 100%;">
+                    </div>
+                </div>
+        </div>
+
+        <div class="card mb-5 mt-4" style="width: 75%; margin-right: auto;margin-left: auto; font-family: 'Cinzel', serif;">
+            <div class="card-body pt-1 pb-1 mt-2">
+                    <div style="margin: 2% 10% 2% 10%;">
+                        <h5 style="text-align: center; color: #416c7d">{{ post.date_post }}</h5>
+                        <h4 style="text-align: center;color:#7a949d;">{{ post.title }}</h4>
+                        <p class="text-secondary" style="text-align:justify;
+                        text-justify:inter-word; font-family:'Cinzel', serif;;">{{ post.content }}</p>
+                    </div>
+            </div>
+        </div>
+
+
+        {% include 'partials/footer.html' %}
+
+
+    {% endblock %}    

@@ -1,0 +1,42 @@
+{% include 'partials/base.html' %}
+{% load static %}
+    <head>
+        <style>
+            body{
+                background-color: white;
+            }
+            .center_first{
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+            @media (min-width: 800px) {
+                .header_title{
+                    font-size: 230%;
+                }
+            }   
+            @media (max-width: 800px) {
+                .header_title{
+                    font-size: 90%;
+                }
+            }   
+        </style>
+    </head>
+
+    <body>
+        <nav class="center_first">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <p class="header_title">BETÜL GÜNEY</p>
+            </a>
+            <hr style="width: 70%;background-color:  black; ">
+            <br>
+            <a class="navbar-brand" href="{% url 'betul-guney-sanat-galerisi' %}">
+            <p class="header_title">BETÜL GÜNEY RESİM ATÖLYESİ</p>
+            </a>
+        </nav>    
+    </body>
+
+</html>
