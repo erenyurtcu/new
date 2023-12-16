@@ -17,20 +17,20 @@
           <a class="nav-link" href="{% url 'home' %}">ana sayfa</a>
         </li>
         <li class="nav-item {% if navbar == 'about' %} active {% endif %}">
-          <a class="nav-link" href="{% url 'about' %}">BİYOGRAFİ</a>
+          <a class="nav-link" href="{% url 'biyografi' %}">BİYOGRAFİ</a>
         </li>
         <li class="nav-item {% if navbar == 'blog' %} active {% endif %}">
-          <a class="nav-link" href="{% url 'blog' %}">
+          <a class="nav-link" href="{% url 'calismalar' %}">
             ÇALIŞMALAR
           </a>
         </li>
-        <li class="nav-item {% if navbar == 'betul-guney-sanat-galerisi' %} active {% endif %}" >
-          <a class="nav-link" href="{% url 'betul-guney-sanat-galerisi' %}">
+        <li class="nav-item {% if navbar == 'resim-atolyesi' %} active {% endif %}" >
+          <a class="nav-link" href="{% url 'resim-atolyesi' %}">
             RESİM ATÖLYESİ
           </a>
         </li>
         <li class="nav-item {% if navbar == 'contact' %} active {% endif %}">
-          <a class="nav-link" href="{% url 'contact' %}">İLETİŞİM</a>
+          <a class="nav-link" href="{% url 'iletisim' %}">İLETİŞİM</a>
         </li>
       </ul>
     </div>

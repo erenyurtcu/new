@@ -28,9 +28,6 @@ def admin_media_detail(request,pk):
 def contact(request):
     return render(request,"contact.html",{'navbar': 'contact'})
 
-def first(request):
-    return render(request,"first.html")
-
 def atolye_iletisim(request):
     return render(request,"bg-contact.html")
 
