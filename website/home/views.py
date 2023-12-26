@@ -2,14 +2,15 @@ from django.shortcuts import redirect, render
 from django.contrib import messages
 from .models import PostModel
 from .models import SliderModel
+from .models import AtolyeModel
 
 def home (request):
     sliderImages = SliderModel.objects.all()
     return render(request,"index.html",{'slider': sliderImages , 'navbar': 'home'})
 
 def bgIndex (request):
-    sliderImages = SliderModel.objects.all()
-    return render(request,"bg-index.html",{'slider': sliderImages ,'navbar': 'bg-home'})
+    atolye = AtolyeModel.objects.all()
+    return render(request,"bg-index.html",{'Atolye': atolye ,'navbar': 'bg-home'})
 
 def about(request):
     return render(request,"about.html",{'navbar': 'about'})

@@ -3,6 +3,12 @@ from website.settings.base import *
 
 DEBUG = False
 
+ALLOWED_HOSTS = [
+    'betulguney.com',
+    'www.betulguney.com',
+    '134.122.62.69',
+]
+
 DATABASES  = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',

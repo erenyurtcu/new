@@ -1,4 +1,6 @@
 from website.settings.base import *
+import os
+PROJECT_DIR = os.path.dirname(__file__)
 
 
 DEBUG = True
@@ -10,5 +12,9 @@ DATABASES = {
     }
 }
 
-STATICFILES_DIRS = [ BASE_DIR / 'home/static']
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+ALLOWED_HOSTS = [
+]
+
+
+STATICFILES_DIRS=[os.path.join(BASE_DIR,'static'),]
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')

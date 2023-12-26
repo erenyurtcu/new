@@ -35,13 +35,10 @@ deactivate () {
     fi
 }
 
-DJANGO_SETTINGS_MODULE="website.settings.development"
-export DJANGO_SETTINGS_MODULE
-
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\ieren\Desktop\bg-website\venv"
+VIRTUAL_ENV="C:\Users\ieren\Documents\GitHub\new\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -70,3 +67,7 @@ fi
 if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
     hash -r 2> /dev/null
 fi
+
+DJANGO_SETTINGS_MODULE="website.settings.development"
+export DJANGO_SETTINGS_MODULE
+
