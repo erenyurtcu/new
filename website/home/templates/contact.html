@@ -1,7 +1,15 @@
 {% include 'partials/nav.html' %}
 {% load static %}
 
-<div class="card mb-3 mt-1 mb-2" style="width: 75%; margin-right: auto;margin-left: auto; border: none">
+<style>
+    @media (max-width: 800px){
+        .only-mobile{
+            display: none;
+        }
+    }
+</style>
+
+<div class="card mb-3 mt-1 mb-2" style="width: 75%; margin-right: auto;margin-left: auto; border: none; background-color: transparent;">
     <div class="row offset-md-12">
         <div style="width: 100%;">
             <div>
@@ -9,29 +17,25 @@
             </div>                
         </div>
         <div style="margin-top: 1.5%; width: 100%; margin-left: auto; margin-right: auto; text-align: center; color: #7a949d; font-family: 'Cinzel', serif;">
-            <p>Talatpaşa Bulvarı No:68
+            <p> <a href="https://maps.app.goo.gl/f2vnUMsr6yqPkNMz6" target=”_blank” style="color: #416c7d;">Talatpaşa Bulvarı No:68
                 Ragıp Apartmanı 4. Kat Daİre No:7
-                Alsancak İzmİr
+                Alsancak İzmİr</a>
             </p>
-            <hr style="line-height: 2%; background-color:  black; width: 70%; margin-top: 0; margin-bottom: 0;">
+            <hr class="hr-contact-big">
             <p style="margin-top: 1.5%; width: 100%; margin-left: auto; margin-right: auto; text-align: center; color: #7a949d; font-family: 'Cinzel', serif;">
-                <h5>TELEFON</h5>   <a href="tel:05057521755">+90 (505) 752 17 55</a>
+                <h5>TELEFON</h5>   <a href="tel:05057521755" class="contact-text">+90 (505) 752 17 55</a>
             </p>
-            <hr style="line-height: 2%; background-color:  black; width: 40%; margin-top: 0; margin-bottom: 0;">
+            <hr class="hr-contact">
             <p style="margin-top: 1.5%; width: 100%; margin-left: auto; margin-right: auto; text-align: center; color: #7a949d; font-family: 'Cinzel', serif;">
-                <h5>INSTAGRAM</h5>   <a href="https://www.instagram.com/betulguney.art/" target=”_blank”>BETULGUNEY.ART</a> | 
-                <a href="https://www.instagram.com/betulguney.artstudio/" target=”_blank”>BETULGUNEY.ARTSTUDIO</a>
+                <h5>INSTAGRAM</h5>   <a class="contact-text" href="https://www.instagram.com/betulguney.art/" target=”_blank”>BETULGUNEY.ART</a> <b class="only-mobile">|</b> 
+                <a class="contact-text" href="https://www.instagram.com/betulguney.artstudio/" target=”_blank”>BETULGUNEY.ARTSTUDIO</a>
             </p>
-            <hr style="line-height: 2%; background-color:  black; width: 40%; margin-top: 0; margin-bottom: 0;">
+            <hr class="hr-contact">
             <p style="margin-top: 1.5%; width: 100%; margin-left: auto; margin-right: auto; text-align: center; color: #7a949d; font-family: 'Cinzel', serif;">
-                <h5>E-MAIL</h5>  <a href="mailto:betulguney35@gmail.com">betulguney35@gmail.com</a>
+                <h5>E-MAIL</h5>  <a class="contact-text" href="mailto:betulguney35@gmail.com">betulguney35@gmail.com</a>
             </p>
-            <hr style="line-height: 2%; background-color:  black; width: 40%; margin-top: 0; margin-bottom: 0;">
+            <hr class="hr-contact">
         </div>
     </div>
 </div>
-
-
 {% include 'partials/footer.html' %}
-
-

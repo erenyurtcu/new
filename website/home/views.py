@@ -10,7 +10,7 @@ def home (request):
 
 def bgIndex (request):
     atolye = AtolyeModel.objects.all()
-    return render(request,"bg-index.html",{'Atolye': atolye ,'navbar': 'bg-home'})
+    return render(request,"bg-index.html",{'atolye': atolye ,'navbar': 'bg-home'})
 
 def about(request):
     return render(request,"about.html",{'navbar': 'about'})
@@ -21,16 +21,13 @@ def blog(request):
 
 def admin_media_detail(request,pk):
     post = PostModel.objects.get(id=pk)
-    context = {
-        'post': post,
-    }
-    return render(request, "blog/post-detail.html", context)
+    return render(request, "blog/post-detail.html", {'post': post,'navbar': 'blog'})
 
 def contact(request):
     return render(request,"contact.html",{'navbar': 'contact'})
 
 def atolye_iletisim(request):
-    return render(request,"bg-contact.html")
+    return render(request,"bg-contact.html",{'navbar': 'atolye_iletisim'})
 
 
 

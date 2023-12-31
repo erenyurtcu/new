@@ -17,38 +17,17 @@
                 <img href="{% url 'postdetail' post.id %}"><img src="{{ post.image.url }}" class="article__image">
             </div>
             <div class="article__content">
-                <h5 class="article__title">{{ post.title }}</h5>
-                <p class="article__description">{{ post.content|truncatechars:50}}</p>
+                <h5 class="article__title">{{ post.content|truncatechars:50}}</h5>
+                <p class="article__description">{{ post.date_post }}</p>
             </div>
             </a>
         </div>
     </li>
     {% endfor %}
-  </ol>
+</ol>
 
-<!-- 
-    <div class="container" style=" font-family: 'Cinzel', serif;">
-            {% for post in posts %}
-            <div class= "col-md-12" >
-                <div class="card mt-1 mb-3 bg-white">
-                    <div class="card-body" >
-                        <div class="row">
-                            <div class = "col-md-12 text-secondary" style="text-align: center;">
-                                <a class="h3 text-gray" href="{% url 'postdetail' post.id %}">{{ post.title }}</a>
-                                <div class="col-md-12" style="display:grid; place-items : center;">
-                                    <a href="{% url 'postdetail' post.id %}"><img src="{{ post.image.url }}" alt="{{ post.image.url }}"  style=" width:200px; height: auto; border:solid 0.1rem black;"></a>
-                                    <small style="padding-top: 2%;color: #416c7d; justify-content: center;">{{ post.date_post }}</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-    </div>-->
-
-    {% include 'partials/footer.html' %}
+{% include 'partials/footer.html' %}
 
 
-    {% endblock %}
+{% endblock %}
     
